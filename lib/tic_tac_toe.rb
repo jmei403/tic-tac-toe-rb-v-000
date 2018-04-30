@@ -88,15 +88,15 @@ def winner(board)
   end
 end
 
-def play(board)
-  if over?(board) && won?(board)
-    puts "Congratulations #{winner(board)}!"
-  elsif over?(board) && draw?(board)
-    puts "Cat's Game!"
-  else
-    turn(board)
-  end
-end
+# def play(board)
+#   if over?(board) && won?(board)
+#     puts "Congratulations #{winner(board)}!"
+#   elsif over?(board) && draw?(board)
+#     puts "Cat's Game!"
+#   else
+#     turn(board)
+#   end
+# end
 
 def play(board)
   until over?(board) == true
