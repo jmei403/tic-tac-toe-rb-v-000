@@ -90,4 +90,9 @@ end
 
 def play(board)
   turn(board)
+  if over?(board) && won?(board)
+    puts "Congratulations #{winner(board)}!"
+  elsif over?(board) && draw?(board)
+    puts "Cat's Game!"
+  end
 end
